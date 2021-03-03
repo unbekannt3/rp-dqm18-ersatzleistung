@@ -14,6 +14,8 @@ export class DataService {
   remove(sportapp: Sportapp) {
     this.sportapp = this.sportapp.filter(g => g.ligaName !== sportapp.ligaName);
   }
+
+  
   async loadDescriptionAndImagefromServer(sportapp: Sportapp) {
     const url1 = "https://www.openligadb.de/Datenhaushalt/";
     let url2 = "";

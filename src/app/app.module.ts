@@ -9,6 +9,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { DataService } from "./data.service";
 import { appRouterModule } from "./app.routes";
 import { DetailComponent } from "./detail/detail.component";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule, appRouterModule],
@@ -17,7 +18,8 @@ import { DetailComponent } from "./detail/detail.component";
     ListComponent,
     FormComponent,
     NavbarComponent,
-    DetailComponent
+    DetailComponent,
+    FooterComponent
   ],
   bootstrap: [AppComponent],
   providers: [DataService]
