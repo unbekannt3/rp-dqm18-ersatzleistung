@@ -1,0 +1,15 @@
+<table class="table">
+  <thead class="thead-dark">
+    <th>ID</th>
+    <th>Liga Name</th>
+    <th>Shortcut</th>
+    <th>Saison</th>
+    <th></th>
+  </thead>
+  <tr *ngFor="let s of sportapp">
+    <td>{{s.id}}</td>
+    <td>{{s.ligaName}}</td>
+    <td>{{s.shortcut}}</td>
+    <td>{{s.saison}}</td>
+  </tr>
+</table>
